@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build:component": "babel ./src/components --out-dir ./src/build",
-    "build:cssdev:master": "sass ./src/scss/master.scss ./src/css/master.min.css"
+    "build:cssdev": "yarn build:cssdev:master",
+    "build:cssdev:master": "sass ./src/scss/master.scss ./src/css/master.min.css",
+    "build:css": "yarn build:css:master",
+    "build:css:master": "sass ./src/scss/master.scss ./src/css/master.min.css -t compressed",
+    "build:dev": "yarn build:cssdev && yarn build:component && webpack --progress",
+    "build": "yarn build:css && yarn build:component && webpack --progress -p"
   },
   "repository": {
     "type": "git",
@@ -24,12 +29,14 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.6",
     "babel-loader": "^7.1.4",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-defaults": "^9.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.10.0",
