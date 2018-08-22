@@ -1,0 +1,35 @@
+.content-main {
+    padding-left: 36px;
+    margin-top: 34px;
+}
+
+// content img
+.content-heading {
+    margin-bottom: 14px;
+}
+
+.content-img {
+    display: block;
+    width: 198px;
+    margin-bottom: 17px;
+}
+
+.content-link {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: #FF6D55;
+    text-decoration: none;
+}
+
+.content-paragraph {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #66666b;
+    margin-bottom: 24px;
+    .content-header {
+        font-weight: 600;
+    }
+}

@@ -1,19 +1,14 @@
-.menu-container {
-    float: left;
-    width: 25%;
-}
-
 .menu {
     position: relative;
+    height: 100%;
     padding-top: 36px;
     background-color: #282a3d;
 }
 
 .menu-divider {
     height: 2px;
-    width: 225px;
     background-color: $color-font-menu;
-    margin: 10px auto 0;
+    margin: 0 36px;
 }
 
 // heading
@@ -24,6 +19,7 @@
     text-transform: uppercase;
     letter-spacing: 3.2px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 // menu items

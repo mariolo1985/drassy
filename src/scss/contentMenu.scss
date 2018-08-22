@@ -1,0 +1,24 @@
+.content-menu-wrapper {
+    padding: 36px 36px 0 36px;
+}
+
+.content-menu-list {
+    text-align: right;
+    margin-bottom: 10px;
+    .content-menu-link {
+        font-size: 16px;
+        letter-spacing: 3.2px;
+        color: #282A3D;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:nth-child(1) {
+            margin-right: 35px;
+        }
+    }
+}
+
+.content-menu-underline {
+    height: 2px;
+    background-color: #282A3D
+}
