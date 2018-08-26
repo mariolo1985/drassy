@@ -1,16 +1,54 @@
+// Text
+.text-sm {
+    font-size: 12px;
+    letter-spacing: 0;
+    color: #9b9b9b;
+    margin-top: 0;
+}
+
+// content text
 .content-main {
-    font-family: OpenSans;
+    font-family: OpenSans, Arial;
     padding: 34px 63px 0 36px;
 }
 
-// content img
+// content layout
+.content-item {
+    &.item-1of2 {
+        float: left;
+        width: 50%;
+    }
+    &.item-1of3 {
+        float: left;
+        width: 33.333%;
+    }
+    &.item-2of3 {
+        float: left;
+        width: 66.667%;
+    }
+}
+
+.content-wrapper {
+    &.left {
+        padding-right: 13px;
+    }
+    &.right {
+        padding-left: 13px;
+    }
+}
+
+.content-item-img {
+    width: 100%;
+    border: 4px solid #d7e4e8;
+}
+
 .content-heading {
     margin-bottom: 14px;
 }
 
+// content img
 .content-img {
     display: block;
-    width: 198px;
     margin-bottom: 17px;
 }
 
