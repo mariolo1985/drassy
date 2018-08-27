@@ -23,3 +23,16 @@
     height: 2px;
     background-color: #282A3D
 }
+
+// Contact
+.contact-item {
+    &.item-1of3 {
+        float: left;
+        width: 33.333%;
+    }
+    &.icon {
+        svg {
+            width: 16px;
+        }
+    }
+}
