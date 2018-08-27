@@ -3,7 +3,7 @@
     font-size: 12px;
     letter-spacing: 0;
     color: #9b9b9b;
-    margin-top: 0;
+    margin: 9px 0;
 }
 
 // content text
@@ -23,6 +23,16 @@
         text-align: center;
         vertical-align: middle;
         margin-bottom: 88px;
+    }
+}
+
+.content-item {
+    &.icon {
+        text-align: center;
+        .content-item-img {
+            border: none;
+            width: 108px;
+        }
     }
 }
 
@@ -66,6 +76,9 @@
     &.item-2of3 {
         width: 66.667%;
     }
+    &.item-1of5 {
+        width: 20%;
+    }
 }
 
 .content-wrapper {
@@ -93,12 +106,22 @@
 }
 
 .content-link {
-    display: block;
+    position: relative;
+    display: inline-block;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0;
     color: #FF6D55;
     text-decoration: none;
+    .link-censor {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 150px;
+        background-color: #000000;
+        color: #FFFFFF;
+        text-align: center;
+    }
 }
 
 .content-paragraph {
@@ -124,7 +147,8 @@
         }
         &.item-1of2,
         &.item-1of3,
-        &.item-2of3 {
+        &.item-2of3,
+        &.item-1of5 {
             width: 100%;
         }
     }
