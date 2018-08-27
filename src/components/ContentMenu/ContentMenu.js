@@ -12,7 +12,7 @@ class ContentMenu extends Component {
     }
 
     componentDidMount() {
-        httpRequest("/js/menu.json", this.handleMenuRequest);
+        httpRequest('/js/menu.json', this.handleMenuRequest);
     }
 
     handleMenuRequest = (responseText) => {
@@ -24,24 +24,28 @@ class ContentMenu extends Component {
     }
 
     render() {
-        if (!this.state.menuLoaded) {
+        const {
+            menuLoaded,
+            menuData
+        } = this.state;
+        if (!menuLoaded) {
             return null;
         }
 
         return (
-            <div className='content-menu-wrapper'>
-                <div className='content-menu-list clear'>
+            <div className="content-menu-wrapper">
+                <div className="content-menu-list clear">
                     {
-                        this.state.menuData.contact.map((contactItem, key) => {
+                        menuData.contact.map((contactItem) => {
                             return (
-                                <a key={key} href={contactItem.url} className='content-menu-link'>
+                                <a key={contactItem.name} href={contactItem.url} className="content-menu-link" target="_blank" rel="noopener noreferrer">
                                     {contactItem.name}
                                 </a>
-                            )
+                            );
                         })
                     }
                 </div>
-                <div className='content-menu-underline' />
+                <div className="content-menu-underline" />
             </div>
         );
     }

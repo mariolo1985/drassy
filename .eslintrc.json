@@ -4,15 +4,22 @@
         "browser": true
     },
     "parser": "babel-eslint",
-    "rules": {
+    "rules": { // comma stuff
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        // for indent types
         "indent": [
             "error",
             4
-        ], // for indent types
+        ],
+        // something with LF and CRLF formating
         "linebreak-style": [
             "error",
             "windows"
-        ], // something with LF and CRLF formating
+        ],
+        // allow jsx in files with .js
         "react/jsx-filename-extension": [
             1,
             {
@@ -21,11 +28,16 @@
                     ".jsx"
                 ]
             }
-        ], // allow jsx in files with .js
+        ],
+        // more indent stuff?
         "react/jsx-indent": [
             true,
             12
-        ] // more indent stuff?
+        ],
+        "jsx-quotes": [
+            "error",
+            "prefer-single"
+        ]
     },
     "settings": {
         "import/parser": "babel-eslint"
