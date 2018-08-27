@@ -37,3 +37,19 @@ body {
 @import 'content';
 @import 'menu';
 @import 'contentMenu';
+@media(max-width: $screen-sm) {
+    .menu-container {
+        position: fixed;
+        left: -100%;
+        float: none;
+        width: 100%;
+        transition: left 1s;
+        &.show {
+            left: 0;
+        }
+    }
+    .content-container {
+        float: none;
+        width: 100%;
+    }
+}
