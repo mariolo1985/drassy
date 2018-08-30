@@ -37,6 +37,13 @@ class ContentMenu extends Component {
                 <div className="content-menu-list clear">
                     {
                         menuData.contact.map((contactItem) => {
+                            if (contactItem.name === 'Contact') {
+                                return (
+                                    <a key={contactItem.name} href={contactItem.url} className="content-menu-link" rel="noopener noreferrer">
+                                        {contactItem.name}
+                                    </a>
+                                );
+                            }
                             return (
                                 <a key={contactItem.name} href={contactItem.url} className="content-menu-link" target="_blank" rel="noopener noreferrer">
                                     {contactItem.name}
