@@ -1,6 +1,24 @@
 .content-menu-wrapper {
+    position: relative;
     font-family: Futura, Arial;
     padding: 36px 36px 0 36px;
+}
+
+.content-mobile-menu-trigger {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 58px;
+    background-color: #282a3d;
+    cursor: pointer;
+    svg {
+        display: block;
+        width: 16px;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
 }
 
 .content-menu-list {
@@ -34,5 +52,16 @@
         svg {
             width: 16px;
         }
+    }
+}
+
+@media(max-width: $screen-sm) {
+    .content-menu-list {
+        .content-menu-link {
+            font-size: 14px;
+        }
+    }
+    .content-mobile-menu-trigger {
+        display: block;
     }
 }
