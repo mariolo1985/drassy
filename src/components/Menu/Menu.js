@@ -26,18 +26,27 @@ class Menu extends Component {
         });
     }
 
+    closeMobileMenu = () => {
+        document.getElementById('menu-container').classList.remove('show');
+    }
+
     render() {
-        if (!this.state.menuLoaded) {
+        const {
+            menuData,
+            menuLoaded
+        } = this.state;
+
+        if (!menuLoaded) {
             return null;
         }
 
         return (
             <div className='menu'>
-                <MenuHeader />
+                <MenuHeader onCloseMobileMenu={this.closeMobileMenu} />
                 {/* work */}
                 <div className='menu-list'>
                     {
-                        this.state.menuData.work.map((workItem, key) => {
+                        menuData.work.map((workItem, key) => {
                             return (
                                 <MenuItem {...workItem} key={key} />
                             );
@@ -48,7 +57,7 @@ class Menu extends Component {
                 {/* apps */}
                 <div className='menu-list'>
                     {
-                        this.state.menuData.app.map((appItem, key) => {
+                        menuData.app.map((appItem, key) => {
                             return (
                                 <MenuItem {...appItem} key={key} />
                             );
