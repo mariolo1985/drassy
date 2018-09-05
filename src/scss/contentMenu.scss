@@ -13,6 +13,7 @@
     width: 58px;
     background-color: #282a3d;
     cursor: pointer;
+    z-index: 5;
     svg {
         display: block;
         width: 16px;
@@ -59,6 +60,11 @@
     .content-menu-list {
         .content-menu-link {
             font-size: 14px;
+        }
+        .contact-item.item-1of3.left {
+            * {
+                opacity: 0;
+            }
         }
     }
     .content-mobile-menu-trigger {
