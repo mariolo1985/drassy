@@ -40,7 +40,7 @@
 
 // menu items
 .menu-list {
-    margin: 36px 0;
+    padding: 36px 0;
 }
 
 .menu-item {
@@ -85,6 +85,10 @@
 @media(max-width: $screen-sm) {
     .menu {
         overflow-y: auto;
+    }
+    .heading-text {
+        text-align: left;
+        padding-left: 36px;
     }
     .heading-mobile-close {
         display: block;

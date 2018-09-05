@@ -170,6 +170,7 @@
     color: #282a3d;
     margin-top: 31px;
     text-align: center;
+    word-break: break-all;
 }
 
 .contact-email {
@@ -177,7 +178,9 @@
     font-size: 22px;
     letter-spacing: 3px;
     color: #282a3d;
+    margin-top: 15px;
     text-align: center;
+    word-break: break-all;
 }
 
 @media(max-width: $screen-sm) {
@@ -202,5 +205,12 @@
     }
     .content-item-img.gif {
         width: 100%;
+    }
+    .contact-info {
+        font-size: 28px;
+    }
+    
+    .contact-email {
+        font-size: 14px;
     }
 }
