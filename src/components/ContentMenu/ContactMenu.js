@@ -11,9 +11,13 @@ const ContactMenu = () => {
         mobileMenu.classList.add('show');
     };
 
+    const handleGoBackClick = () => {
+        history.back();
+    };
+
     return (
         <div className='content-menu-wrapper'>
-            <div className='content-mobile-menu-trigger' id='content-mobile-menu-trigger' onClick={() => handleMobileMenuClick()}>
+            <div className='content-mobile-menu-trigger' id='content-mobile-menu-trigger' onClick={handleMobileMenuClick}>
                 <svg width='16' height='15' viewBox='0 0 16 15'>
                     <g fill='none' fillRule='evenodd'>
                         <g fill='#D7E4E8' fillRule='nonzero'>
@@ -36,7 +40,7 @@ const ContactMenu = () => {
                 </div>
                 <div className='contact-item item-1of3 center contact-menu-heading'>Contact</div>
                 <div className='contact-item item-1of3 right'>
-                    <i className='contact-item icon'>
+                    <i className='contact-item icon goback' onClick={handleGoBackClick}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                             <g fill="none" fillRule="evenodd" stroke="#111" strokeLinecap="round" stroke-Linejoin="round" strokeWidth="2">
                                 <path d="M12.5 1.5l-11 11M1.5 1.5l11 11" />
