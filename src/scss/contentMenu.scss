@@ -75,8 +75,7 @@
 // Contact menu
 .contact-menu {
     .content-menu-list {
-        height: 26px;
-        line-height: 26px;
+        margin-bottom: 6px;
     }
 }
 
@@ -85,7 +84,6 @@
         display: block;
         float: left;
         width: 20px;
-        padding-top: 3px;
         margin-right: 9px;
     }
     .contact-menu-text {
@@ -96,4 +94,8 @@
 .contact-menu-heading {
     font-size: 16px;
     text-transform: uppercase;
+}
+
+.contact-item.goback {
+    cursor: pointer;
 }
