@@ -11,7 +11,7 @@
     "build:css:master": "sass ./src/scss/master.scss ./src/css/master.min.css -s compressed",
     "build:dev": "yarn build:cssdev && yarn build:component && webpack --progress",
     "build": "yarn build:css && yarn build:component && webpack --progress -p",
-    "build:dist": "copyfiles -u 1 src/css/* src/css/fonts/* src/images/* src/js/* src/* dist",
+    "build:dist": "copyfiles -u 1 src/css/* src/css/fonts/* src/images/* src/images/**/* src/js/* src/* dist",
     "build:final": "yarn build:css && yarn build:component && webpack --progress -p && yarn build:dist"
   },
   "repository": {
