@@ -9,7 +9,7 @@
 .menu-divider {
     height: 2px;
     background-color: $color-font-menu;
-    margin: 0 36px;
+    margin: 0 26px;
 }
 
 // heading
@@ -26,11 +26,11 @@
 }
 
 .heading-text {
-    text-align: center;
+    padding-left: 26px;
     margin-bottom: 10px;
     .heading-link {
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 300;
         color: $color-font-menu;
         text-transform: uppercase;
         text-decoration: none;
@@ -44,7 +44,7 @@
 }
 
 .menu-item {
-    padding-left: 36px;
+    padding-left: 26px;
     margin: 22px 0;
     &:hover {
         .menu-item-name {
@@ -57,11 +57,9 @@
     &.selected {
         .menu-item-name {
             color: #ffffff;
-            font-weight: 600;
         }
         .menu-item-tagline {
             color: #ff6d55;
-            font-weight: 600;
         }
     }
     .menu-link {
@@ -71,11 +69,13 @@
     }
     .menu-item-name {
         font-size: 16px;
+        font-weight: 300;
         letter-spacing: 3.2px;
         color: $color-font-menu;
     }
     .menu-item-tagline {
         font-size: 14px;
+        font-weight: 300;
         letter-spacing: 3.5px;
         color: $color-font-menu-secondary;
         margin-top: 6px;
@@ -88,7 +88,7 @@
     }
     .heading-text {
         text-align: left;
-        padding-left: 36px;
+        padding-left: 26px;
     }
     .heading-mobile-close {
         display: block;
