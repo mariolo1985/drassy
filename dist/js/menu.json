@@ -1,0 +1,56 @@
+{
+    "work": [
+        {
+            "name": "Overstock.com",
+            "tagline": "2014-2018",
+            "url": "/overstock.html"
+        },
+        {
+            "name": "Houserie",
+            "tagline": "2018",
+            "url": "/houserie.html"
+        },
+        {
+            "name": "Rental Roost",
+            "tagline": "2018",
+            "url": "/rentalroost.html"
+        },
+        {
+            "name": "Pets",
+            "tagline": "2018",
+            "url": "/pets.html"
+        },
+        {
+            "name": "AFM",
+            "tagline": "2017-2018",
+            "url": "/afm.html"
+        }
+    ],
+    "app": [
+        {
+            "name": "Prince Ribbit",
+            "tagline": "2014-2018",
+            "url": "/princeribbit.html"
+        },
+        {
+            "name": "Counting Ducks",
+            "tagline": "2017",
+            "url": "/countingducks.html"
+        },
+        {
+            "name": "Prank Tac Toe",
+            "tagline": "2013-2014",
+            "url": "/pranktactoe.html"
+        }
+    ],
+    "contact": [
+        {
+            "name": "Dribbble",
+            "url": "https://dribbble.com/drass"
+        },
+        {
+            "name": "Contact",
+            "url": "/contact.html"
+        }
+    ]
+}
